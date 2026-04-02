@@ -1,10 +1,32 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f7fb;
-  color: #1a1a1a;
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-base:    #0a0f1e;
+  --bg-surface: #111827;
+  --bg-card:    #1a2235;
+  --bg-hover:   #1f2d45;
+  --border:     #1e3a5f;
+  --accent:     #0ea5e9;
+  --accent-dim: #0369a1;
+  --text-primary:   #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-muted:     #475569;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger:  #ef4444;
+  --info:    #0ea5e9;
+  --sidebar-w: 240px;
 }
 
-div {
-  padding: 40px;
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  min-height: 100vh;
 }
+
+a { text-decoration: none; color: inherit; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-surface); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
